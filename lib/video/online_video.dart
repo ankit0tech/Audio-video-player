@@ -56,8 +56,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       new Duration(seconds: 1),
       (Timer time) => setState(
         () {
-          // print(videoprogress);
-
           if (_controller.value.position.inSeconds >=
               _controller.value.duration.inSeconds) {
             time.cancel();
